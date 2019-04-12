@@ -18,7 +18,7 @@ public class Frame {
 	
 	public void Frame() {
 		
-		frame("Frame, ")
+		frame("Frame, ");
 		
 	}
 	
