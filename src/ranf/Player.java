@@ -20,7 +20,7 @@ public class Player
 		transform.y = y;
 	}
 	
-	public void update(float dt)
+	public void update(double dt)
 	{
 		transform.add(vel);
 	}
