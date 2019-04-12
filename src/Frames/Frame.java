@@ -1,8 +1,5 @@
 package Frames;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
-
 import javax.swing.JFrame;
 
 public class Frame {
@@ -19,19 +16,13 @@ public class Frame {
 	public void Frame() {
 		
 		frame("Frame, ");
+
+	public void Frame(String title, int width, int height, boolean visible) {
 		
-	}
-	
-	
-	private void frame(String title, int width, int height) {
-		this.title = title;
-		this.width = width;
-		this.height = height;
-		frame = new JFrame();
-		frame.setSize(width, height);
+		JFrame frame = new JFrame();
 		frame.setTitle(title);
-		frame.setVisible(true);
-		
+		frame.setSize(width, height);
+		frame.setVisible(visible);
 		
 		
 	}
