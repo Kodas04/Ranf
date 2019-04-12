@@ -7,8 +7,17 @@ import gfx.View;
 public class Frame extends JFrame{
 
 	public View view;
+	String title;
+	int width, height;
+	boolean visible;
 	
-	public void Frame(String title, int width, int height, boolean visible) {
+	
+	public Frame(String title, int width, int height, boolean visible) {
+		
+		this.title = title;
+		this.width = width;
+		this.height = height;
+		this.visible = visible;
 		
 		this.setTitle(title);
 		this.setSize(width, height);
