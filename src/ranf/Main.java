@@ -6,8 +6,7 @@ public class Main {
 		
 	}
 	
-	public void s()
-	{
+	public void s() {
 		
 	}
 
