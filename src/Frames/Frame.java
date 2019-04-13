@@ -21,6 +21,7 @@ public class Frame extends JFrame{
 		
 		this.setTitle(title);
 		this.setSize(width, height);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
 	}
 
