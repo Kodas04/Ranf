@@ -1,6 +1,7 @@
 package ranf;
 
 import java.awt.Graphics;
+import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 
 import utils.Vec2;
@@ -29,6 +30,11 @@ public class Player
 	{
 		g.fillRect(transform.x, transform.y, 16, 16);
 		//g.drawImage(skin, transform.x, transform.y, null);
+	}
+	
+	public Rectangle getBox()
+	{
+		return new Rectangle(transform.x, transform.y, 16, 16);
 	}
 	
 }
