@@ -4,7 +4,8 @@ public class Main {
 	
 	public static void main(String[] arg) {
 		
-		new Ranf();
+		Ranf ranf = new Ranf();
+		ranf.start();
 		
 	}
 }

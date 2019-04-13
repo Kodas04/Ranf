@@ -15,7 +15,7 @@ public class Ranf implements Runnable {
 	public Thread thread;
 	public boolean running;
 	
-	public double framerate;
+	public double framerate = 1.0/60.0;
 	
 	public Ranf() {
 		
@@ -27,6 +27,8 @@ public class Ranf implements Runnable {
 		running = true;
 		
 		gt.setFrame(new Frame("Frame", gt.getScreenWidth() ,gt.getScreenHeight() , true));
+		
+		thread.run();
 	}
 	
 	public void stop()
@@ -63,6 +65,8 @@ public class Ranf implements Runnable {
 				render = true;
 				
 				/*Update function*/
+				
+				System.out.println(fps);
 				
 				for(Player p : players)
 				{
