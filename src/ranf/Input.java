@@ -23,8 +23,8 @@ public class Input extends GT implements KeyListener {
 	@Override
 	public void keyReleased(KeyEvent e) {
 		if (e.getKeyCode() == KeyEvent.VK_W) y = y;
-		if (e.getKeyCode() == KeyEvent.VK_A) y = y;
-		if (e.getKeyCode() == KeyEvent.VK_S) x = x;
+		if (e.getKeyCode() == KeyEvent.VK_A) x = x;
+		if (e.getKeyCode() == KeyEvent.VK_S) y = y;
 		if (e.getKeyCode() == KeyEvent.VK_D) x = x;
 		
 		
