@@ -15,7 +15,7 @@ public class Ranf implements Runnable {
 	public Thread thread;
 	public boolean running;
 	
-	public double framerate = 1.0/60.0;
+	public double framerate = 1.0/60.0; // = 60FPS
 	
 	public Ranf() {
 		
