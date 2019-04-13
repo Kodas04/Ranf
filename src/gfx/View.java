@@ -24,6 +24,7 @@ public class View
 		frame.add(canvas);
 		canvas.createBufferStrategy(3);
 		BufferStrategy bf = canvas.getBufferStrategy();
+		g = bf.getDrawGraphics();
 		return bf.getDrawGraphics();
 	}
 	

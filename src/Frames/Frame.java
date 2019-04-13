@@ -1,5 +1,9 @@
 package Frames;
 
+import java.awt.Canvas;
+import java.awt.Graphics;
+import java.awt.image.BufferStrategy;
+
 import javax.swing.JFrame;
 
 import gfx.View;
@@ -33,6 +37,24 @@ public class Frame extends JFrame{
 	public void setView(View view)
 	{
 		this.view = view;
+	}
+	
+	public Canvas canvas;
+	public Graphics g;
+	
+	public Graphics createGraphics()
+	{
+		canvas = new Canvas();
+		this.add(canvas);
+		canvas.createBufferStrategy(3);
+		BufferStrategy bf = canvas.getBufferStrategy();
+		g = bf.getDrawGraphics();
+		return bf.getDrawGraphics();
+	}
+	
+	public Graphics getGraphics()
+	{
+		return g;
 	}
 	
 	

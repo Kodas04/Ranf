@@ -9,9 +9,9 @@ import utils.Vec2;
 public class Player extends GT
 {
 
-	public Vec2 transform;
+	public Vec2 transform = new Vec2(0, 0);
 
-	public Vec2 vel;
+	public Vec2 vel = new Vec2(0, 0);
 	
 	public BufferedImage skin;
 	

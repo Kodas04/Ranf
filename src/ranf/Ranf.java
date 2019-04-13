@@ -5,6 +5,7 @@ import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 
 import Frames.Frame;
+import gfx.View;
 
 public class Ranf implements Runnable {
 	
@@ -26,8 +27,10 @@ public class Ranf implements Runnable {
 		thread = new Thread(this);
 		running = true;
 		
-		gt.setFrame(new Frame("Frame", gt.getScreenWidth() ,gt.getScreenHeight() , true));
+		players.add(new Player(0, 0));
 		
+		gt.setFrame(new Frame("Frame", gt.getScreenWidth() ,gt.getScreenHeight() , true));
+		gt.getFrame().createGraphics();
 		thread.run();
 	}
 	
@@ -84,7 +87,7 @@ public class Ranf implements Runnable {
 				//TODO : Render
 				for(Player p : players)
 				{
-					p.render(gt.getFrame().view.getGraphics());
+					p.render(gt.getFrame().getGraphics());
 				}
 				frames++;
 			} else {
