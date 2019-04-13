@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 
 import utils.Vec2;
 
-public class Player
+public class Player extends GT
 {
 
 	public Vec2 transform;
@@ -14,8 +14,16 @@ public class Player
 	
 	public BufferedImage skin;
 	
+	GT gt;
+	
+	int x = gt.x;
+	int y = gt.y;
+	
 	public Player(int x, int y)
 	{
+		this.x = x;
+		this.y = y;
+		
 		transform.x = x;
 		transform.y = y;
 	}

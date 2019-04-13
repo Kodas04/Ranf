@@ -7,6 +7,10 @@ public class GT {
 
 	Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 	
+	
+	static int x = 0;
+	static int y = 0;
+	
 	int screen_width = dim.width;
 	int screen_height = dim.height;
 	
